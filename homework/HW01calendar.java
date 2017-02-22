@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.Locale;
 
 /*Используя код листинга 4 напишите приложение, выводящее на
+консоль календарь на год.*/
 
 public class HW01calendar
 {
@@ -19,6 +20,7 @@ public class HW01calendar
 
 		String y[][] = new String[12][];// 12 месяцев
 
+		// Заполняем массив
 		for (int i = 0; i < y.length; i++)
 		{
 			y[i] = getMonthText(year, i);

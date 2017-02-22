@@ -22,10 +22,13 @@ public class CalendarTest
 		d.add(Calendar.DAY_OF_MONTH, 6);
 		
 		int LastDayOfWeek=d.get(Calendar.DAY_OF_WEEK);
+		 		
 		d.set(Calendar.DAY_OF_MONTH, 1);		
 			
 		int weekday = d.get(Calendar.DAY_OF_WEEK);
 
+		System.out.println("Пн Вт Ср Чт Пт Сб Вс");
+		r+="Пн Вт Ср Чт Пт Сб Вс";
 		r+="\n";
 
 		for (int i = FirstDayOfWeek; i < weekday; i++)
